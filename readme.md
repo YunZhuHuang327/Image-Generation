@@ -30,7 +30,50 @@ The RGB MNIST dataset should be downloaded separately and is **NOT** included in
    [Insert Google Drive Link Here]
    ```
 
-3. Extract the downloaded dataset to create the following directory structure:
+3.Alternatively,there's another way to download:
+# Generate Images Dataset
+
+This repository provides the **MNIST dataset zip file (`mnist.zip`)**, which can be used for image generation or other machine learning experiments.
+
+## Download the Dataset
+
+Please download the dataset from the Hugging Face repository:
+
+[MNIST Dataset on Hugging Face](https://huggingface.co/grandmaeatsadumpling/Generate-Images-Dataset)
+
+You can either click the **Download** button or use Git + Git LFS:
+
+```bash
+git lfs install
+git clone https://huggingface.co/grandmaeatsadumpling/Generate-Images-Dataset
+````
+
+After downloading, the dataset file will be located at:
+
+```
+Generate-Images-Dataset/mnist.zip
+```
+
+---
+
+## Usage
+
+Extract `mnist.zip` to use the dataset:
+
+```bash
+unzip mnist.zip -d ./mnist_data
+```
+
+---
+
+## Notes
+
+* Make sure Git LFS is installed; otherwise, large files cannot be downloaded correctly.
+* The dataset file may be large, so please be patient while downloading.
+
+
+
+4. Extract the downloaded dataset to create the following directory structure:
    ```
    data/mnist_rgb/
    ├── 0/
@@ -46,7 +89,7 @@ The RGB MNIST dataset should be downloaded separately and is **NOT** included in
        └── ...
    ```
 
-4. Update the `--data_path` argument when running the training script to point to your dataset location.
+5. Update the `--data_path` argument when running the training script to point to your dataset location.
 
 **Important:** The `data/mnist_rgb/` directory containing training images should NOT be committed to the repository to reduce repository size.
 
