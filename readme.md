@@ -31,11 +31,11 @@ The RGB MNIST dataset should be downloaded separately and is **NOT** included in
    ```
 
 3.Alternatively,there's another way to download:
-# Generate Images Dataset
+### Generate Images Dataset
 
 This repository provides the **MNIST dataset zip file (`mnist.zip`)**, which can be used for image generation or other machine learning experiments.
 
-## Download the Dataset
+#### Download the Dataset
 
 Please download the dataset from the Hugging Face repository:
 
@@ -56,7 +56,7 @@ Generate-Images-Dataset/mnist.zip
 
 ---
 
-## Usage
+#### Usage
 
 Extract `mnist.zip` to use the dataset:
 
@@ -66,7 +66,7 @@ unzip mnist.zip -d ./mnist_data
 
 ---
 
-## Notes
+#### Notes
 
 * Make sure Git LFS is installed; otherwise, large files cannot be downloaded correctly.
 * The dataset file may be large, so please be patient while downloading.
